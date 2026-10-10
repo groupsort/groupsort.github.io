@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Group ChatGPT Chats by Date</title>
+<meta name="description" content="A tiny Chrome extension that keeps your ChatGPT sidebar organized by date: Today, Yesterday, and specific dates. Local-only, free.">
+<meta name="theme-color" content="#0b0c0f">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="./" aria-label="Group ChatGPT Chats, home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Group ChatGPT Chats
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="privacy/Group-ChatGPT-Chats-by-Date.html">Privacy</a>
+        <a href="https://chromewebstore.google.com/detail/group-chatgpt-chats-by-da/fapiomipbkcmdlocchmnpebpcmijmkpd?authuser=0&hl=en" data-chrome>Chrome Web Store</a>
+      </nav>
+      <a class="btn btn-sm btn-light" href="#support" data-dodo>Support</a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="intro">
+      <h1>Group your ChatGPT chats by&nbsp;date.</h1>
+      <p class="lede">A tiny extension that keeps your ChatGPT sidebar organized. Free, and it never leaves your browser.</p>
+
+      <div class="cta-row">
+        <a class="btn btn-light" href="#" data-chrome>Add to Chrome</a>
+      </div>
+
+      <aside class="support" id="support">
+        <div class="support-text">
+          <h2>Built to stay free.</h2>
+          <p>If this extension makes your ChatGPT sidebar easier to use, you can support continued development.</p>
+        </div>
+        <div class="support-action">
+          <a class="btn btn-dark" href="#support" data-dodo>Support the project ↗</a>
+          <span class="pwyw">Pay what you want.</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="stage" aria-label="Preview">
+      <div class="sidebar" id="sidebar" data-grouped="false">
+        <div class="sb-top">
+          <span class="sb-title">Chats</span>
+          <button class="switch" id="groupSwitch" type="button" role="switch" aria-checked="false" aria-label="Group by date">
+            <span class="switch-label">Group by date</span>
+            <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+          </button>
+        </div>
+
+        <div class="sb-body">
+          <section class="group">
+            <button class="group-head" type="button" aria-expanded="true">
+              <span class="chev" aria-hidden="true"></span>Today
+            </button>
+            <ul class="chats">
+              <li>Build a RAG study bot</li>
+              <li>n8n automation ideas</li>
+              <li>React Native project</li>
+            </ul>
+          </section>
+
+          <section class="group">
+            <button class="group-head" type="button" aria-expanded="true">
+              <span class="chev" aria-hidden="true"></span>Yesterday
+            </button>
+            <ul class="chats">
+              <li>Python practice plan</li>
+              <li>Database revision</li>
+            </ul>
+          </section>
+
+          <section class="group">
+            <button class="group-head" type="button" aria-expanded="true">
+              <span class="chev" aria-hidden="true"></span>September 18
+            </button>
+            <ul class="chats">
+              <li>Project architecture</li>
+              <li>API design notes</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Independent project, not affiliated with OpenAI.</p>
+      <p>Local-only · No backend · No analytics</p>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
